@@ -338,3 +338,5 @@ This is a list of all the websites/video links which I referred while implementi
 9. [Generators in python for loading data](https://jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
 
 10. [Glove Vector Embeddings](https://nlp.stanford.edu/projects/glove/)
+
+If you wish to see the notebooks that I have originally written in Google Colab, refer [here](https://colab.research.google.com/drive/1DFhh2Zin2h_BEmW6Nb-Io-iPmpYeNswQ) for the notebook that trains and evaluates the image captioning model and [here](https://colab.research.google.com/drive/1O-sr-9BAjAOU2NSplbAEjedIf8JFPYhu) for notebook that generates a prediction.
