@@ -1,5 +1,9 @@
 # Image Description Generator
 
+In this repo, we will be building an AI model (end to end), using `keras` API for `tensorflow`, for tagging an image with a description and deploying the application with `Flask` framework. The final output looks as below:
+
+![](imgs/Flask_app.gif)
+
 ## The Problem
 
 Artificial Intelligence has asserted it's versatility in the industry and many people testify the amazing things which these networks can perform. One of these things is Image Captioning i.e. given an image, predict a sentence that describes what that image contains. Simply stated it generates a description given an image. There's a lot of things that go into making one such caption generator and thanks to the exhaustive research that's happening currently in this field, organizations and individuals have been extremely innovative and also generous enough to share ideas, concepts and implementations which help make this possible.
