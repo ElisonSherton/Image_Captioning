@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background: #a194da;
+}
+
+h2{
+    font-size:30px;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar{
+    background-color: darkgoldenrod;
+    position: fixed;
+    width: 270px;
+    height: 100%;
+    padding: 40px 0px;
+}
+
+.wrapper .sidebar h2{
+    font-size: 30px;
+    padding: 20px 20px;
+}
+
+.wrapper .sidebar ul li{
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+    color: black;
+    padding: 20px 25px;
+}
+
+.wrapper .sidebar p{
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    color: black;
+    padding: 20px 25px;
+}
+
+.wrapper .main_content{
+    width: 100%;
+    margin-left: 280px;
+}
+
+.wrapper .main_content p{
+    font-size: 40px;
+}
+
+.wrapper .main_content .container h1{
+    font-size: 40px;
+    padding: 20px 20px;
+} 
+
+.wrapper .main_content .container form{
+    font-size: 35px;
+}
+
+.wrapper .main_content .container form .form-group .custom-file input{
+    font-size: 35px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.wrapper .main_content .container form button{
+    font-size: 35px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.wrapper .main_content .container0{
+    font-size: 20px;
+    background-color: rgb(26, 26, 153);
+    color: rgb(192, 140, 9);
+    height: 100px;
+    width: 99%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.wrapper .main_content .container0 .center{
+    margin-top: 20px;
+  }
+
+.wrapper .main_content .home p{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.wrapper .main_content .home p b{
+    font-size: 25px;
+}
+
+.wrapper .main_content .home img{
+    border: 1px solid black;
+    border-radius: 5%;
+    display: block;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+
+.wrapper .main_content .container1{
+    font-size: 20px;
+    height: 100%;
+    width: 600px;
+    float:left; 
+    margin: 30px;
+}
+
+.wrapper .main_content .container1 img{
+    margin-left: 15%;
+    width: 450px;
+    border-radius: 10%;
+    border: 1.5px solid black;
+}
+
+.wrapper .main_content .container2{
+    font-size: 20px;
+    height: 100%;
+    width: 400px;
+    float:left; 
+    margin: 30px;
+}
+
+.wrapper .main_content .container2 table{
+    margin-left: 30%;
+    float: top;
+}
+
+.wrapper .main_content .container2 tr,td{
+    border: 1px solid black;
+    font-size: 25px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.wrapper .main_content .container3{
+    font-size: 20px;
+    height: 100%;
+    width: 400px;
+    float:left; 
+}
+
+.wrapper .main_content .container3 table{
+    margin-left: 5%;
+    float: top;
+    margin-top: 30px;
+}
+
+.wrapper .main_content .container3 tr,td{
+    border: 1px solid black;
+    font-size: 25px;
+    padding: 5px;
+    margin: 30px;
+}
+
+.wrapper .main_content .img_grid table tr td{
+    border: 1px solid black;
+    width: 265px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.wrapper .main_content .img_grid table tr td form {
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.wrapper .main_content .img_grid table tr td form img{
+    width: 200px;
+    border-radius: 10%;
+    border: 1px solid black;
+    display: block;
+    margin-top: 20px;
+}
+
+.wrapper .main_content .img_grid table tr td form button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+    border : 1px solid black;
+}
+
+.wrapper .main_content .table_view table tr td{
+    width: 100px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+
+.wrapper .main_content .table_view table tr td form img{
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.wrapper .main_content .table_view table tr td form button{
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+.wrapper .main_content .manage_imgs_img_grid table tr td{
+    width: 200px;
+    height: 200px;
+}
+
+.wrapper .main_content .manage_imgs_img_grid table tr td form img{ 
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+
+.wrapper .main_content .manage_imgs_img_grid table tr td form button{ 
+    display: block;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5%;
+    font-size: 20px;
+}
+

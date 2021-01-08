@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+    <div class="container">
+        <h1>Upload An Image</h1>
+        <hr>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>Select Image</label>
+            
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="image" id="image">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload & Get Predictions</button>
+        </form>
+    </div>
+{% endblock %}
