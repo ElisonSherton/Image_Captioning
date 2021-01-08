@@ -47,7 +47,7 @@ Eventually, the output from both encoder and decoder is merged and passed to a D
 
 For the purpose of this problem, we'll be using a dataset called Flickr8K which can be found [here](https://www.kaggle.com/ming666/flicker8k-dataset). This dataset contains 8091 images and is structured as follows
 
-![](flicker8k-dataset.PNG)
+![](imgs/flicker8k-dataset.PNG)
 
 The Flickr8k_text folder contains several text file of which we're interested in the following four
 
@@ -225,7 +225,7 @@ We will take an input image and it's corresponding 5 captions and generate a bat
 
 The solution model architecture is implemented as below. The schematic was obtained by using the `plot_model` function from `keras.utils` package.
 
-![](Architecture.png)
+![](imgs/Architecture.png)
 
 - The image features pipeline consists of **an input, a dropout and a dense layer**. The dropout layer will help to regularize and the dense layer will convert the substantially high 2048-dimensional output as returned by the penultimate layer of ResNet50 into a modest 256-dimensional output.
 - The sequence features pipeline consists of an input layer, embedding layer, dropout layer and an LSTM layer. It's important to note here that ***LSTM output*** dimension and ***Image Features Output Dense Layer*** dimension must be the same. Because they'll both be merged and passed on to the further architecture.
@@ -281,19 +281,19 @@ Commonly, cross-entropy loss satisfies the above criteria and is therefore a dec
 
 After having trained the model, now comes the time to test how good our model is. There are several ways we could do this. The simplest one is take an image, generate a caption and check whether what is output/predicted makes any sense or not. Let's try doing this on images from our test folder and see if it's relevant/related to the original caption.
 
-![](Test-1.PNG)
+![](Test_Results/Test-1.PNG)
 
 The model seems to be predicting well on this image. Except the grammar it has grasped the action and the  content of the image right.
 
-![](Test-3.PNG)
+![](Test_Results/Test-3.PNG)
 
 In the above image, it has identified one dog which is standing and it's already hard to distinguish if it's brown or black colored owing to the lighting conditions. However the model couldn't identify the second dog.
 
-![](test-5.PNG)
+![](Test_Results/test-5.PNG)
 
 In this image, it has identified the background properly but it only picked up two men who seem to stand still at the top of the mountain. It is yet to learn to identify things in foreground properly.
 
-![](Test-6.PNG)
+![](Test_Results/Test-6.PNG)
 
 In this image, it seems that the model performed horribly which is true. But it could be attributed to the fact that our training data has a lot of skateboarder images who are most of the times flying or airborne. Also, the fact that it could recognize there are several people and use the word crowd is commendable.
 
