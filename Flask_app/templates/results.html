@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+<div class="container0">
+    <div class="center">
+        <h1>Caption Generator</h1>
+    </div>
+</div>
+
+<div class="container1">
+    
+
+    <figure>
+        <img src="{{ img_pth }}" alt="{{ img_pth }}">
+        <figcaption>{{ img_pth.split("/")[-1] }}</figcaption>
+    </figure>
+
+</div>
+
+<br><br>
+<p style="font-size: 30 px;">
+    Caption as Follows
+</p>
+
+<div class="container2">
+        
+    <tr>
+        <td>{{ preds.title() }}</td>
+    </tr>
+            
+</div>
+
+{% endblock %}

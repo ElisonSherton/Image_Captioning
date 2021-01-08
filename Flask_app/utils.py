@@ -64,15 +64,15 @@ class utils:
         tokenizer, it generates and subsequently returns a captions
         '''
         ip_seq = 'startseq'                                                           # Seeding the caption generation with startseq
-        model, tk, max_length = self.load_pretrained_data(model_path, tokenizer_path) # Retrieve the model, tokenizer, max caption length from provided path
-        features = self.get_image_features(image_path)                                # Extract ResNet50 features corresponding to the image
+        model, tk, max_length = utils.load_pretrained_data(model_path, tokenizer_path) # Retrieve the model, tokenizer, max caption length from provided path
+        features = utils.get_image_features(image_path)                                # Extract ResNet50 features corresponding to the image
 
         for idx in range(max_length):
             seq = tk.texts_to_sequences([ip_seq])[0]                               # Tokenize the input using the tokenizer object loaded above
             seq = pad_sequences([seq], maxlen = max_length, padding = 'post')      # Pad the sequences to be of same length as the maximum caption length
             new_word_distribution = model.predict([features, seq], verbose = 0)    # Forward propogate the image features and caption features
             new_word_idx = np.argmax(new_word_distribution)                        # Get the index corresponding to most probable word outcome
-            new_word = self.get_word_from_idx(new_word_idx, tk)                    # Extract the word from index generated above
+            new_word = utils.get_word_from_idx(new_word_idx, tk)                    # Extract the word from index generated above
 
             if new_word:
                 if new_word != 'endseq':                                              
